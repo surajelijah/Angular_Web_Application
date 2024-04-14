@@ -1,0 +1,15 @@
+runtime: nodejs18
+
+
+instance_class: F2
+
+env_variables: 
+  BUCKET_NAME: "hw8-mse4876294242-571-1.appspot.com"
+
+handlers:
+- url: /
+  static_files: dist/hw8_my_angular_code/index.html
+  upload: dist/hw8_my_angular_code/index.html
+
+- url: /
+  static_dir: dist/hw8_my_angular_code

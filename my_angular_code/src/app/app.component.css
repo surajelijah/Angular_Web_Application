@@ -1,0 +1,24 @@
+
+
+.search_button,.favorites_button {
+    --bs-btn-bg:#000;
+    --bs-btn-border-color: #FFF;
+    --bs-btn-hover-bg: #000;
+    --bs-btn-active-border-color: #FFF;
+    --bs-btn-hover-border-color: #FFF;
+    --bs-btn-border-radius: .5rem;
+}
+
+.favorite_pointer:hover{
+    cursor:pointer
+}
+
+tr,td{
+    text-align: center;
+}
+
+.fav_block{
+
+    margin-top:10%
+
+}

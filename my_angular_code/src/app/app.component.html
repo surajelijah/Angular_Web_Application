@@ -1,0 +1,60 @@
+<nav class="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand">Navbar</a>
+    <div class="d-flex">
+      <button class="btn btn-secondary me-3 search_button" routerLink="/search" (click)="display_component($event)">Search</button>
+      <button class="btn btn-secondary favorites_button" routerLink="/favorites" (click)="display_component($event)">Favorites</button>
+    </div>
+  </div>
+</nav>
+
+<div *ngIf="display_content_val==0; else favorites">
+  <app-search-form></app-search-form>
+</div>
+
+<ng-template #favorites>
+
+  <div *ngIf="this.localstorage_count==0;">
+
+    <div class="container" style="border-radius: 5%;">
+      <table class="table container-fluid text-center fav_block" style="background-color: white;">
+          <thead>
+              <th scope="col" style="color:red;">
+                  No Favorites available
+              </th>
+          </thead>
+      </table>
+  </div>
+  </div>
+
+  <div *ngIf="this.localstorage_count!=0">
+    <div class="container p-3 fav_block">
+      <table class="table table-striped" style="background-color: #FFF ;">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+            <th scope="col">Event</th>
+            <th scope="col">Category</th>
+            <th scope="col">Venue</th>
+            <th scope="col">Favorite</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let option of this.tables_values;let i=index">
+
+                <td>{{i+1}}</td>
+                <td class="p-3"><div>{{option[1]}}</div></td>
+                <td>{{option[2]}}</td>
+                <td>{{option[3]}}</td>
+                <td >{{option[4]}}</td>
+                <td ><span (click)="remove_favorite($event)" id="{{option[0]}}" class="favorite_pointer material-icons">delete</span></td>
+                
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <app-favorites-display></app-favorites-display>
+</ng-template>

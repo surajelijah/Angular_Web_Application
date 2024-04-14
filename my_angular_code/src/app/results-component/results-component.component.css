@@ -1,0 +1,304 @@
+.clickable_event{
+    cursor: pointer;
+}
+
+.clickable_event:hover{
+    color: rgb(83, 83, 231);
+}
+
+.td_icon{
+    width: 15%;
+    padding: 0;
+}
+#go_table:hover{
+    cursor: pointer
+}
+
+.searchform_{
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 2.5%;
+    margin-top: 5%;
+}
+
+.event_heading{
+
+    color: antiquewhite;
+}
+
+#favorite_marker{
+
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+#heart_image{
+
+    width:40px;
+    height:30px;
+
+}
+
+#heart_image:hover{
+    cursor:pointer
+}
+
+#event_card_values{
+
+    color: hsl(167, 85%, 73%);
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.event_card_content{
+    color:white;
+    font-size: 15px;
+    margin-top: 2px;
+    font-family: sans-serif;
+    
+}
+
+.ticket{
+
+    color:white;
+
+}
+
+#onsale{
+
+    background-color: rgb(60, 179, 113);
+}
+
+#offsale{
+    background-color: red;
+}
+
+#canceled{
+    background-color:black;
+
+
+}
+
+.status{
+
+    font-size: 15px;
+    margin-top: 2px;
+    color: white;
+    border-radius: 50px;
+    display: inline-block;
+    padding:2px;
+    font-family: sans-serif;
+    align-self: center!important;
+}
+
+
+#postponed{
+    background-color:rgb(255, 165, 0);
+}
+
+#rescheduled{
+    background-color:rgb(255, 165, 0);
+}
+
+
+
+#place_image{
+
+    max-height: 80%;
+    max-width: 80%;
+    background-size:cover;
+    margin-top: 15%;
+    align-content: center;
+}
+
+#event_card_values_bta{
+    text-decoration: none;
+    color: aqua;
+    font-size: 15px;
+    margin-top: 2px;
+    font-family: sans-serif;
+    border-radius: 5%;
+    text-align: center!important;
+}
+
+#share{
+    color:antiquewhite;
+    padding-left: 40%;
+    margin-bottom: 3%;
+    font-size: 20px;
+}
+
+.showmore{
+
+    color: rgb(83, 83, 231);
+    font-size: 15px;
+    text-decoration: underline;
+
+}
+.social_media{
+
+    width: 1.5em;
+    margin-left: 2.5%;
+    height: 1.5em;
+}
+
+.artist_{
+
+    padding-top: 25%;
+    padding-bottom: 25%;
+
+}
+
+#spotify{
+
+    width: 5em;
+    margin-left: 1%;
+    height: 5em;
+}
+
+
+#artist_image{
+
+    padding-left:5%;
+}
+
+.artist_text{
+
+    color:hsl(167, 85%, 73%);
+    font-size: 20px;
+}
+
+
+
+.image_row{
+
+    padding-left: 20%;
+}
+
+
+#popularity{
+
+    justify-content: center;
+
+}
+
+#followers{
+    color:hsl(167, 85%, 73%);
+    font-size: 20px;
+    justify-content: center;
+
+}
+
+.spinner_{
+
+    justify-content: center;
+}
+
+#followers_value{
+
+    
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+
+
+#album_feature{
+
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+
+#artist_name{
+
+
+}
+
+#artist_image{
+
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.icon_images{
+    width:120px;
+    height:100px;
+}
+
+th,td{
+    text-align: center;
+}
+
+
+
+
+
+
+.album_images{
+
+    width: 150px;
+    height: 150px;
+
+}
+
+
+#card_details{
+
+
+    padding:5%;
+
+}
+
+#displayModel{
+
+    --bs-modal-width:600px;
+
+}
+.map-container{
+
+    height:400px;
+    width:400px;
+}
+
+.center_elements{
+
+    justify-content: center !important
+
+}
+
+.artist_center{
+    align-self: center;
+}
+
+.carousel-control-next{
+
+    justify-content: end;
+    padding-right:5%;
+}
+
+.carousel-control-prev{
+
+    justify-content: start;
+    padding-left:5%;
+
+}
+
+#spotify_header{
+
+    padding-top: 10%;
+    justify-content: center;
+
+}
+
+.popular{
+
+    color: white;
+    font-size: 10px;
+
+}
